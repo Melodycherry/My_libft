@@ -6,11 +6,21 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 09:30:01 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/27 12:43:19 by mlaffita         ###   ########.fr       */
+/*   Updated: 2025/02/07 11:56:46 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* ***********************************************
+Applique la fonction ’f’ à chaque caractère de
+la chaîne de caractères ’s’, passant son index
+comme premier argument et le caractère lui-même
+comme second argument. Une nouvelle chaîne de
+caractères est créée (avec malloc(3)), résultant
+des applications successives de ’f’
+**************************************************
+*/
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

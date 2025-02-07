@@ -6,11 +6,19 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:55:56 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/29 13:28:58 by mlaffita         ###   ########.fr       */
+/*   Updated: 2025/02/07 12:10:29 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* *******************************************************************************
+La fonction strnstr() localise la première occurrence de la chaîne de caractères 
+à terminaison nulle needle dans la chaîne haystack, où pas plus de len caractères 
+sont recherchés.  Les caractères qui apparaissent après un caractère '\0' ne sont 
+pas recherchés.
+**********************************************************************************
+*/
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

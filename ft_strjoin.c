@@ -6,11 +6,17 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 18:08:39 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/23 16:38:15 by mlaffita         ###   ########.fr       */
+/*   Updated: 2025/02/07 11:53:16 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* **********************************************
+Alloue (avec malloc(3)) et retourne une nouvelle
+chaîne, résultat de la concaténation de s1 et s2.
+*************************************************
+*/
 
 char	*ft_strjoin(char const	*s1, char const	*s2)
 {

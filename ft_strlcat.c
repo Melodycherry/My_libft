@@ -6,11 +6,17 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 16:05:40 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/23 16:37:15 by mlaffita         ###   ########.fr       */
+/*   Updated: 2025/02/07 11:54:45 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* **************************************************************************
+Permet de concaténer 2 chaines de caractères. 
+Elle va rajouter size caractères de la chaîne src à la fin de la chaîne dst.
+*****************************************************************************
+*/
 
 unsigned int	ft_strlcat( char *dest, const char *src, unsigned int size)
 {

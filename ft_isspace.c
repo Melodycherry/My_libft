@@ -6,9 +6,11 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 18:26:33 by mlaffita          #+#    #+#             */
-/*   Updated: 2025/02/06 16:24:53 by mlaffita         ###   ########.fr       */
+/*   Updated: 2025/02/07 11:51:10 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isspace(int c)
 {

@@ -6,11 +6,17 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:45:51 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/23 16:36:15 by mlaffita         ###   ########.fr       */
+/*   Updated: 2025/02/07 11:55:48 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* ***************************************************************
+La fonction ﻿strlcpy permet de copier une chaîne de caractères 
+dans une autre chaîne en limitant le nombre de caractères copiés.
+******************************************************************
+*/
 
 unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size)
 {

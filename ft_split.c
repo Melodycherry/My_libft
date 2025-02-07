@@ -6,11 +6,20 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 10:39:33 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/27 13:29:51 by mlaffita         ###   ########.fr       */
+/*   Updated: 2025/02/07 11:45:04 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* ****************************************************************************
+Cette fonction extrait un mot d'une chaîne donnée s jusqu'à rencontrer 
+un délimiteur c ou la fin de la chaîne.
+Elle retourne un pointeur vers une nouvelle chaîne contenant ce mot.
+Utilise malloc pour allouer dynamiquement la mémoire nécessaire pour le mot, 
+y compris le caractère nul.
+*******************************************************************************
+*/
 
 char	*ft_extract_word(char const *s, char c)
 {

@@ -6,11 +6,20 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 13:04:52 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/23 15:57:50 by mlaffita         ###   ########.fr       */
+/*   Updated: 2025/02/07 11:32:45 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* *********************************************************************
+Recherche la première occurence d'une valeur typée int, mais 
+interprétée en tant que char, dans un bloc de mémoire.
+Si la fonction a trouvé le caractère recherché, la fonction 
+renvoie un pointeur vers sa première occurence. Si ce n'est pas le cas, 
+la fonction renvoie la valeur NULL.
+************************************************************************
+*/
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

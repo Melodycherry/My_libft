@@ -6,11 +6,19 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 18:12:51 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/23 14:44:00 by mlaffita         ###   ########.fr       */
+/*   Updated: 2025/02/07 11:49:12 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/* ****************************************************************************
+La fonction strdup (qui signifie "string duplicate") est une fonction standard 
+en C qui crée une copie d'une chaîne de caractères (une chaîne de type char *). 
+Son fonctionnement repose sur la duplication de la chaîne source, en allouant 
+dynamiquement de la mémoire pour stocker la nouvelle chaîne copiée.
+*******************************************************************************
+*/
 
 char	*ft_strcpy(char *dest, const char *src)
 {

@@ -6,9 +6,20 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 15:36:54 by mlaffita          #+#    #+#             */
-/*   Updated: 2024/10/26 15:53:28 by mlaffita         ###   ########.fr       */
+/*   Updated: 2025/02/07 11:51:57 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+
+/* *************************************************
+Applique la fonction ’f’ à chaque caractère de la
+chaîne de caractères transmise comme argument,
+et en passant son index comme premier argument.
+Chaque caractère est transmis par adresse à ’f’
+afin d’être modifié si nécessaire.
+****************************************************
+*/
 
 void	ft_striteri( char *s, void (*f)(unsigned int, char*))
 {
