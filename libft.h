@@ -6,7 +6,7 @@
 /*   By: mlaffita <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 21:55:38 by mlaffita          #+#    #+#             */
-/*   Updated: 2025/02/05 20:21:29 by mlaffita         ###   ########.fr       */
+/*   Updated: 2025/03/17 11:40:03 by mlaffita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <string.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 10
+# endif
+# define GNL_ERROR -1
+# define GNL_EOF 0
 
 typedef struct s_list
 {
@@ -40,6 +46,7 @@ void			*ft_memmove(void *dst, const void *src, size_t len);
 void			*ft_memset( void *b, int c, size_t len);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strdup(const char *src);
+char			*ft_strndup(const char *src, int n);
 unsigned int	ft_strlcat(char *dest, const char *src, unsigned int size);
 unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size);
 int				ft_strlen(const char *str);
@@ -53,6 +60,7 @@ int				ft_toupper(int c);
 // Part2
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
+char			*ft_strjoin_free(char *s1, char *s2);
 char			*ft_strtrim(char const *s1, char const *set);
 char			**ft_split(char const *s, char c);
 char			*ft_itoa(int n);
@@ -74,4 +82,9 @@ t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 					void (*del)(void *));
 t_list			*ft_lstnew(void	*content);
 int				ft_lstsize(t_list *lst);
+
+//PERSO
+long			ft_atol(const char *str);
+char			*get_next_line(int fd);
+
 #endif
